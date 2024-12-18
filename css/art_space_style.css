@@ -1,0 +1,1125 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Instrument+Serif:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Instrument+Serif:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+:root {
+  --black: #01050f;
+  --dark_gray: #4e525c;
+  --gray: #9599a3;
+  --light_gray: #bec2cc;
+  --white: #ffffff;
+  --light_beige: #f9f7f5;
+  --orange: #f5842f;
+  --dark_blue: #081f5c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  margin-bottom: 140px;
+}
+
+button {
+  display: flex;
+  width: 312px;
+  height: 48px;
+  padding: 12px 17px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  font-family: Montserrat;
+  color: var(--black);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid var(--black, #01050f);
+  background-color: transparent;
+}
+
+button:hover {
+  background-color: var(--black);
+  transform: scale(1.1);
+  color: var(--white);
+}
+
+/*-----------Fonts styling--------------*/
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 80px;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/*-------------Breadcrumbs------------------*/
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  margin: 60px;
+  align-items: center;
+  gap: 16px;
+  margin-top: 100px;
+}
+
+.breadcrumbs a {
+  font-family: "Playfair Display", serif;
+  color: var(--gray);
+  font-size: 20px;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+/*----------------------Hero Screen------------------------*/
+
+.top_line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 60px;
+}
+
+.top_line h3 {
+  font-weight: 600;
+}
+
+.bottom_line {
+  margin: 0 60px;
+  position: absolute;
+}
+
+.bottom_line h3 {
+  color: var(--white);
+  font-size: 120px;
+  font-weight: 600;
+}
+
+.hero_screen {
+  margin-bottom: 60px;
+}
+
+.hero_image img {
+  width: 100%;
+  height: auto;
+}
+
+.social_links img {
+  height: 48px;
+  width: 48px;
+}
+
+.nav-inside {
+  display: flex;
+  flex-direction: row;
+  margin: 0 60px 60px 60px;
+  gap: 40px;
+  padding: 20px;
+  border-top: var(--gray) solid 1px;
+  border-bottom: var(--gray) solid 1px;
+}
+
+.nav-inside a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.nav-inside a:hover {
+  color: var(--orange);
+}
+
+/*----------------------------About Section--------------------------*/
+
+.about {
+  display: flex;
+  flex-direction: row;
+  margin: 60px;
+  gap: 70px;
+  position: relative;
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  left: 810px;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background-color: var(--gray);
+}
+
+.about_tsum {
+  display: flex;
+  flex-direction: row;
+  margin: 60px;
+  gap: 70px;
+  position: relative;
+}
+
+.about_tsum::after {
+  content: "";
+  position: absolute;
+  left: 860px;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background-color: var(--gray);
+}
+
+.block_left {
+  display: flex;
+  width: 894px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.block_left h2 {
+  font-size: 24px;
+  color: var(--gray);
+}
+
+.block_left h4 {
+  font-size: 16px;
+}
+
+span {
+  font-family: "Montserrat", sans-serif;
+}
+
+.price-forcraft {
+  max-width: 430px;
+}
+
+.block_right {
+  padding: 40px;
+}
+
+.block_right h4 {
+  margin-bottom: 16px;
+  color: var(--black);
+}
+
+.time-row,
+.price-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.days,
+.price-type {
+  color: var(--dark_gray);
+}
+
+.hours,
+.price {
+  color: var(--black);
+  font-weight: 600;
+}
+
+.wlcm_description {
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.read-more-btn {
+  display: none;
+}
+
+/* Entry details styles */
+.note {
+  font-size: 14px;
+  color: var(--gray);
+  margin-bottom: 24px;
+}
+
+.free-entrance {
+  background-color: var(--light_beige);
+  padding: 24px;
+  margin: 24px 0;
+  border-radius: 12px;
+  max-width: 434px;
+}
+
+.free-entrance h4 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.free-entrance p {
+  font-size: 13px;
+}
+
+.highlight_price {
+  color: var(--orange);
+}
+
+/* Accessibility styles */
+.accessibility {
+  margin-bottom: 40px;
+}
+
+.access-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.access-item img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Social media section */
+.social-media p {
+  margin: 16px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+}
+
+/*-----------Gallery Section--------------*/
+.gallery {
+  padding: 60px;
+  background-color: var(--light_beige);
+}
+
+.gallery_content {
+  margin-bottom: 60px;
+}
+
+.photo_card img {
+  max-width: 370px;
+}
+
+.photo_card p {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.events_cards {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+  transition: transform 0.5s ease;
+  overflow: auto;
+  white-space: nowrap;
+  scrollbar-color: transparent transparent;
+  transition: transform 0.5s ease;
+  margin: 0;
+}
+
+.events_carousel {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  position: absolute;
+  top: 335%;
+  width: 47px;
+  height: 48px;
+  background-color: var(--black);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  z-index: 10;
+  transform: translateY(-50%);
+}
+
+.next {
+  right: 2%;
+}
+
+.prev {
+  left: 2%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/*-----------Events section--------------*/
+
+.events {
+  margin: 100px 60px;
+}
+
+.title_section {
+  margin-bottom: 60px;
+}
+
+.title_section h2 {
+  border-bottom: var(--gray) solid;
+  margin: 8px;
+}
+
+.events_cards {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  transition: transform 0.5s ease;
+}
+
+.events_carousel {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+/*-----------Event card--------------*/
+
+.event_card {
+  flex: 0 0 auto;
+  max-width: 312px;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Card image */
+.card_image {
+  overflow: hidden;
+  height: auto;
+  display: block;
+  width: 312px;
+  height: 206px;
+}
+
+.card_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card_image:hover img {
+  transform: scale(1.1);
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.tag {
+  color: #bec2cc;
+  margin-bottom: 8px;
+  margin-top: 4px;
+}
+
+.title {
+  color: #081f5c;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 14px;
+  color: #4e525c;
+}
+
+.date {
+  font-size: 12px;
+  color: #01050f;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.date .icon {
+  font-size: 18px;
+}
+
+/*------------Getting Here Section---------------*/
+
+.getting-here {
+  text-align: center;
+}
+
+.getting-here h2 {
+  margin: 60px 0;
+}
+
+.map_and_description {
+  display: flex;
+  flex-direction: row;
+}
+
+.description_address_box {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light_beige);
+  width: 100%;
+  padding: 40px 24px;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.address,
+.directions,
+.contact_info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.directions_link {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.highlight {
+  font-size: 16px;
+  color: var(--dark_blue);
+  font-weight: 600;
+}
+
+/*------------Reviews Section---------------*/
+
+.reviews_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.reviews {
+  margin: 0 60px;
+}
+
+.review-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 8px;
+  height: auto;
+  width: auto;
+  padding: 0;
+  color: #333;
+}
+.icon-button:hover {
+  background-color: transparent;
+  color: var(--orange);
+}
+
+/* initial state of the like heart button */
+
+.like-button .heart-icon .fill-color-shape {
+  fill: transparent;
+}
+
+.like-button .heart-icon.isLiked {
+  filter: drop-shadow(0 3px 5px #c44133);
+}
+
+/* "liked" state of the like heart button */
+
+.like-button .heart-icon.isLiked .fill-color-shape {
+  transition: fill 0.5s linear;
+  fill: #e74c3c;
+}
+
+.like-button .heart-icon:hover {
+  transform: translate(-20%, calc(-50% - 3px)) scale(1.03);
+}
+
+.review_card {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 400px;
+}
+
+.avatar img {
+  height: 60px;
+  width: 60px;
+}
+
+.review_card_content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 16px;
+}
+.review_card_content p {
+  color: var(--gray);
+}
+
+.review_card_content h4 {
+  font-size: 20px;
+  color: var(--dark_gray);
+}
+
+.user_info {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
+.user_info p {
+  font-size: 12px;
+}
+
+.review_images {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: 112px;
+  height: 140px;
+}
+
+.review_images img {
+  width: fit-content;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--gray);
+}
+
+.posts a:hover {
+  text-decoration: underline;
+  color: var(--gray);
+}
+
+.view-all-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+
+.view-all-button {
+  width: 312px;
+  padding: 12px 17px;
+  display: flex; /* Added */
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* Added - space between text and arrow */
+  background-color: transparent;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--black);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-all-button:hover {
+  background-color: transparent;
+  color: var(--orange);
+  transform: scale(1.1);
+}
+
+/*-----------------Gallery Section---------------------*/
+
+.gallery_posts {
+  margin: 120px 0;
+}
+
+.hashtags {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin: 0 60px 32px 60px;
+}
+
+.hashtags h4 {
+  font-weight: 400;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.post_card img {
+  height: 260px;
+  width: 260px;
+}
+
+.post_card {
+  white-space: nowrap;
+}
+
+.gallery_track:hover .posts {
+  animation-play-state: paused;
+}
+
+.posts {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 24px;
+  white-space: nowrap;
+  animation: 35s slide infinite linear;
+}
+
+.gallery_track {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+/*------------ARTSPACES PAGE------------------*/
+
+.blocks-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.block {
+  flex: 1;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+  filter: saturate(100%);
+  overflow: hidden;
+  transition: filter 0.3s ease;
+}
+/* Dark overlay */
+.block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.8s ease;
+  z-index: 2;
+}
+
+.block:hover {
+  flex: 1.2;
+  filter: saturate(0%);
+}
+
+.block-content h3 {
+  text-align: left;
+  font-size: 48px;
+  margin-bottom: 16px;
+  color: var(--white);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow */
+}
+
+.block-content p {
+  text-align: left;
+  color: var(--white);
+  max-width: 400px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Added slightly smaller shadow for paragraph */
+  line-height: 1.5; /* Added for better readability */
+}
+/* Background images for each block */
+#block1 {
+  background: url("/assets/images/hero_screen_msumk.jpg") center/cover;
+}
+
+#block2 {
+  background: url("/assets/images/crafr_card_spaces.jpg") center/cover;
+}
+
+#block3 {
+  background: url("/assets/images/art1.jpg") center/cover;
+}
+
+.block-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 60px;
+  width: 100%;
+  z-index: 3; /* Keep text above all effects */
+}
+
+.block-number {
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  z-index: 3;
+}
+
+.block-number h1 {
+  color: var(--white);
+  font-weight: 200;
+  opacity: 0.5;
+}
+
+.block:hover .block-number h1 {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+/* Mobile version */
+@media screen and (max-width: 768px) {
+  /*------------ART SPACES PAGE--------------*/
+  .blocks-container {
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    overflow-x: hidden; /* Hide horizontal overflow */
+  }
+
+  .block {
+    flex: none;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+
+  .block-number {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+  }
+
+  .block-content {
+    position: absolute;
+    bottom: 120px;
+    left: 20px;
+    padding: 0;
+  }
+
+  .block-content h3 {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+
+  .block-content p {
+    font-size: 16px;
+    max-width: 300px;
+  }
+  /*------------ART SPACES PAGE END--------------*/
+
+  /* General styles */
+  section {
+    margin-bottom: 60px;
+  }
+
+  /* Typography */
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 14px;
+  }
+
+  .block_left .msumk_description {
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  /* Breadcrumbs */
+  .breadcrumbs {
+    margin: 20px;
+    margin-top: 100px;
+    gap: 8px;
+  }
+
+  .breadcrumbs a {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .breadcrumbs h4 {
+    font-size: 14px; /* Match the size of breadcrumb links */
+    line-height: 1.2;
+  }
+
+  /* Hero Screen */
+  .top_line {
+    margin: 0 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .msumk_title {
+    font-size: 33px;
+  }
+
+  .bottom_line {
+    margin: 0 20px;
+  }
+
+  .bottom_line h3 {
+    font-size: 48px;
+  }
+
+  /* About Section */
+  .about {
+    flex-direction: column;
+    margin: 20px;
+    gap: 30px;
+  }
+
+  .about::after {
+    display: none;
+  }
+
+  .block_left {
+    width: 100%;
+  }
+
+  .block_right {
+    margin: 60px 0;
+    padding: 0;
+  }
+
+  /* Gallery Section */
+
+  .gallery {
+    padding: 16px;
+  }
+
+  .events_cards {
+    margin: 0;
+  }
+
+  /* Events Section */
+  .events {
+    margin: 60px 20px;
+    overflow: hidden; /* Prevent horizontal scrollbar */
+  }
+
+  .events_cards {
+    display: flex;
+    flex-direction: row; /* Keep cards in a row */
+    gap: 16px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scroll-snap-type: x mandatory; /* Snap to cards when scrolling */
+    padding-bottom: 16px; /* Space for scroll bar */
+  }
+
+  .event_card {
+    flex: 0 0 280px; /* Fixed width, no growing or shrinking */
+    scroll-snap-align: start; /* Snap points */
+    width: 280px; /* Fixed width for cards */
+  }
+
+  .card_image {
+    width: 280px;
+    height: 185px;
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .events_cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .events_cards {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* Getting Here Section */
+  .map_and_description {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .map_and_description iframe {
+    width: 100%; /* Make map take full width */
+    height: 300px; /* Set a reasonable height for mobile */
+  }
+
+  .description_address_box {
+    padding: 20px;
+    width: 100%; /* Make description box take full width */
+  }
+
+  .directions_link img {
+    width: 56px;
+    height: 56px;
+  }
+
+  /* Reviews Section */
+  .reviews {
+    margin: 0 16px;
+  }
+
+  .reviews_box {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .review_card {
+    width: 100%;
+  }
+
+  /* Gallery Posts */
+  .hashtags {
+    margin: 0 20px 20px 20px;
+    flex-wrap: wrap;
+  }
+
+  .post_card img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* Buttons */
+  button {
+    width: 100%;
+  }
+
+  .view-all-button {
+    width: 100%;
+  }
+
+  /* Internal Navigation */
+  .nav-inside {
+    margin: 0 20px 40px 20px;
+    gap: 24px;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Enable horizontal scroll */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    white-space: nowrap; /* Keep items in single line */
+    padding: 20px 0; /* Add vertical padding */
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar IE/Edge */
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .nav-inside::-webkit-scrollbar {
+    display: none; /* Hide scrollbar Chrome/Safari */
+  }
+
+  .nav-inside a {
+    flex: 0 0 auto; /* Prevent shrinking */
+    font-size: 18px; /* Slightly smaller font size */
+  }
+
+  /* Hero Section - Hide Social Icons */
+  .social_links {
+    display: none; /* Hide social icons on mobile */
+  }
+
+  /* If you have a specific container for social icons in hero */
+  .hero_screen .social_links {
+    display: none;
+  }
+
+  /* Hide Navigation Buttons */
+  .prev,
+  .next {
+    display: none; /* Hide navigation buttons on mobile */
+  }
+
+  /* In case you have specific container classes */
+  .events_carousel .prev,
+  .events_carousel .next,
+  .gallery .prev,
+  .gallery .next {
+    display: none;
+  }
+
+  /* About Section Paragraphs */
+  .block_left p:not(:first-of-type) {
+    display: none; /* Hide all paragraphs except the first one */
+  }
+
+  .block_left p.show {
+    display: block; /* Show paragraphs when they have 'show' class */
+  }
+
+  /* Read More Button */
+  .read-more-btn {
+    display: inline-block;
+    color: var(--orange);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 16px;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .read-more-btn:hover {
+    text-decoration: underline;
+    background: none;
+    color: var(--orange);
+    transform: none;
+  }
+}
